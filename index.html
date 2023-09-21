@@ -35,7 +35,7 @@
     <!-- START HALAMAN UTAMA -->
     <section id="pageMain">
       <header>
-        <div class="navbar">
+        <nav class="navbar">
           <img src="assets/logo.png" alt="logo" />
           <div class="navigation">
             <ul>
@@ -44,7 +44,7 @@
               <li class="programKami">Program Kami</li>
             </ul>
           </div>
-        </div>
+        </nav>
         <div class="registrasi">
           <ul>
             <li>Bahasa Indonesia <span></span></li>
@@ -72,7 +72,7 @@
 
       <section id="hero">
         <div class="title-hero">
-          <p>MENGEMBANGKAN</p>
+          <p class="description">MENGEMBANGKAN</p>
           <p class="color-title">KECINTAAN MEMBACA</p>
           <p>UNTUK ANAK INDONESIA</p>
           <div class="sub-title">
@@ -82,6 +82,7 @@
             <p>siap menghadapi masa depan dengan</p>
             <p>cemerlang di era digital.</p>
           </div>
+          <a href="" id="cta"> Ayo Baca </a>
         </div>
         <img src="assets/foto-hero.png" alt="hero" />
       </section>
@@ -191,7 +192,7 @@
       </div>
     </section>
     <!-- END DONASI -->
-
+    <!-- TESTIMONI -->
     <section id="testimoni">
       <h2>Testimoni</h2>
       <p class="sub-title-testimoni">
@@ -254,6 +255,36 @@
         </div>
       </div>
     </section>
+    <!-- END TESTIMONI -->
+    <!-- FORM -->
+    <section class="form">
+      <div>
+        <h3>Hubungi Kami</h3>
+      </div>
+      <div class="inputan">
+        <form>
+          <label>Name :</label>
+          <input type="text" id="name" />
+          <label>City :</label>
+          <input type="text" id="city" />
+          <label>Email :</label>
+          <input type="email" id="email" />
+          <label>Zip Code :</label>
+          <input type="number" id="zip-code" />
+          <div class="kolom-check">
+            <input type="checkbox" id="status" />
+            <label id="check"
+              >Dengan ini saya menyatakan data yang diisi pada form ini adalah
+              benar dan telah sesuai
+            </label>
+          </div>
+          <button id="submit-form" type="submit">Submit</button>
+          <div id="warning"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
       <div class="footer-top">
         <div class="kolom1-foooter">
@@ -300,9 +331,11 @@
         <div class="kolom2-footer-bottom">
           <p>Privacy & Policy</p>
           <p>Terms & Condition</p>
+          <a href="https://skilvul.com" id="link" target="_blank">BySkilvul</a>
         </div>
       </div>
     </footer>
+    <!-- END FOOTER -->
     <script src="js/script.js"></script>
   </body>
 </html>
